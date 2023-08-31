@@ -19,3 +19,24 @@ function numberSelection() {
 console.log("Hai scelto il numero " + userNumber);
 let computerNumber = numberSelection();
 console.log("il computer sceglie " + computerNumber);
+
+//faccio la somma tra la scelta dell utente e quella del computer
+let sum = userNumber + computerNumber;
+console.log("Il totale è " + sum);
+
+
+//uso una funzione per decretare il vincitore
+function evenOrOdd(){
+    if (sum % 2 === 0 && userSelection === "pari") {
+        console.log('Pari, hai vinto');
+    } else if (sum % 2 === 0 && userSelection === "dispari") {
+        console.log("Pari, vince il computer");
+    } else if (sum % 2 !== 0 && userSelection === "pari") {
+        console.log("Dispari, vince il computer");
+    } else if (sum % 2 !== 0 && userSelection === "dispari") {
+        console.log("Dispari, hai vinto!");
+    } 
+    }
+    
+    //richiamo la funzione
+    evenOrOdd()
